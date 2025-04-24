@@ -1,0 +1,49 @@
+/* src/styles/UpdateAccountList.css */
+
+#updateAccountListContainer {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  #updateAccountListContainer h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  #updateAccountListContainer .accounts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #updateAccountListContainer .accounts-table th,
+  #updateAccountListContainer .accounts-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  #updateAccountListContainer .accounts-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  #updateAccountListContainer .update-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #updateAccountListContainer .update-button:hover {
+    background-color: #0056b3;
+  }
+  

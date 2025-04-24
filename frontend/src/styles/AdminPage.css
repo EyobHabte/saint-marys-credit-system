@@ -1,0 +1,50 @@
+/* Set the app container to display flex */
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar styles */
+.sidebar-container {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #333;
+  
+  
+}
+
+/* Main container to hold Header and Dashboard */
+.main-container {
+  flex-grow: 1; /* Take remaining width */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  top: 0;
+  right: 0;
+  left: 250px;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 100;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-actions {
+  display: flex;
+  gap: 20px;
+}
+/* Dashboard fills the remaining space below header */
+.dashboard-container {
+  flex-grow: 1; /* Take the remaining height */
+  padding: 20px;
+  overflow-y:auto; /* Add scrolling if content overflows */
+  background-color: #f8f9fa;
+}

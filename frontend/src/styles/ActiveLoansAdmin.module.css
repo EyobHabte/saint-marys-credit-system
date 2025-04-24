@@ -1,0 +1,72 @@
+/* Container for the active loans admin page */
+.adminLoansContainer {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Heading */
+.adminLoansContainer h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+/* Table styling */
+.loansTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.loansTable thead {
+  background-color: #f8f8f8;
+}
+
+.loansTable th,
+.loansTable td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.loansTable th {
+  font-weight: bold;
+  color: #333333;
+}
+
+.loansTable tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.loansTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button styling */
+button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .loansTable th,
+  .loansTable td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

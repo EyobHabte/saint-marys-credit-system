@@ -1,0 +1,105 @@
+/* src/styles/EnhancedWithdraw.css */
+.enhanced-withdraw-page {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in;
+  }
+  
+  .withdraw-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .withdraw-icon {
+    font-size: 2.2rem;
+    color: #f44336 !important; /* Red color for withdraw */
+    margin-right: 10px;
+    animation: iconBounce 0.8s ease-in-out;
+  }
+  
+  @keyframes iconBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .balance-display {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .withdraw-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #f44336;
+    box-shadow: 0 2px 4px rgba(244, 67, 54, 0.2);
+  }
+  
+  .submit-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #d32f2f !important;
+    transform: translateY(-2px);
+  }
+  
+  .submit-btn:disabled {
+    background-color: #e57373 !important;
+    cursor: not-allowed;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,29 @@
+/* src/styles/MemberLoanStatus.module.css */
+
+.memberLoanStatus {
+  padding: 10px;
+}
+
+.memberLoanStatus h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loanDetails {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loanDetails p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

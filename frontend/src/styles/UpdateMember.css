@@ -1,0 +1,191 @@
+/* Container for Update Member List */
+.update-member-list {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .update-member-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .update-member-list .error {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .members-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .members-table th, .members-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .members-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .members-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .members-table td {
+    color: #34495e;
+  }
+  
+  .update-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .pagination span {
+    font-size: 1rem;
+    color: #34495e;
+  }
+  
+  /* Update Member Form */
+  .update-member-form {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-member-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .update-member-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  .members-table th {
+    background-color: #004085 !important;
+    color: #ffffff !important;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .update-member-form input,
+  .update-member-form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .update-member-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-member-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .update-member-form .error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .update-member-form .success {
+    color: #2ecc71;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  .field-error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

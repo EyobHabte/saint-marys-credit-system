@@ -1,0 +1,140 @@
+/* Sidebar container styles */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.sidebar-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #2ecc71;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu-title {
+    color: #95a5a6;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1em;
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #34495e;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.alert-badge {
+    background-color: #e74c3c;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: auto;
+    font-size: 0.8em;
+    color: white;
+}
+
+.mail-count {
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    margin-left: 5px;
+    color: white;
+}
+
+.mail-count.red {
+    background-color: #e74c3c;
+}
+
+.mail-count.green {
+    background-color: #2ecc71;
+}
+
+.mail-count.orange {
+    background-color: #f39c12;
+}
+
+/* Dropdown styling */
+.dropdown {
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add space between dropdown items */
+}
+
+.dropdown-item {
+    padding: 10px 15px; /* Increased padding for better spacing */
+    font-size: 0.95em; /* Slightly larger font size for readability */
+    color: #bdc3c7;
+    background-color: #2c3e50; /* Match sidebar background */
+    border-radius: 5px; /* Add a subtle rounded corner effect */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #3b4f60;
+    color: #ecf0f1;
+    transform: translateX(5px); /* Subtle movement on hover */
+}
+
+/* Dropdown arrow icon styling */
+.dropdown-arrow {
+    font-size: 0.8em; /* Smaller arrow size */
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+    transform: rotate(180deg);
+}
+
+/* Prevent horizontal scrolling on the body */
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+

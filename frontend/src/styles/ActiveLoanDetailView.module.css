@@ -1,0 +1,42 @@
+/* src/styles/ActiveLoanDetailView.module.css */
+.activeLoanDetailContainer {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activeLoanDetailContainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .detailItem {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .detailItem strong {
+    color: #333;
+  }
+  
+  .backButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .backButton:hover {
+    background-color: #0056b3;
+  }
+  

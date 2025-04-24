@@ -1,0 +1,234 @@
+/* src/styles/AdminDashboard.css */
+
+/* Dashboard Container */
+.dashboard {
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+.dashboard-title {
+    font-size: 24px;
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.admin-label {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+/* Card Styling */
+.client-details {
+    display: flex;
+    gap: 20px;
+}
+/* Client Details and Recent Transactions Sections */
+
+.client-details, .recent-transactions {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    margin-bottom: 10px;
+}
+.card h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.card button {
+    font-size: 14px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.card button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+/* Card colors */
+.card.blue { background-color: #3498db; }
+.card.orange { background-color: #f39c12; }
+.card.red { background-color: #e74c3c; }
+.card.green { background-color: #2ecc71; }
+.card button {
+    margin-top: 10px;
+    background: #fff;
+    color: inherit;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Account Overview Section */
+.account-overview h2 {
+    color: #3498db !important;
+    font-size: 20px;
+}
+
+.account-overview h2 {
+    font-size: 20px;
+    color: #34495e ;
+    margin-bottom: 10px ;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .client-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+/* Chart Container */
+
+.chart-container {
+    height: 250px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+}
+
+/* Active Loans Section */
+.active-loans {
+    padding: 15px;
+    background-color: #dff0d8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.active-loans h3 {
+    font-size: 18px;
+    color: #2ecc71;
+}
+
+/* Table Styling */
+.active-loans table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.active-loans th, .active-loans td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.active-loans th {
+    background-color: #3a7bd5;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.active-loans td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.active-loans td[colspan="3"] {
+    color: #888;
+}
+
+/* Table Controls (Pagination and Search) */
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.table-controls select,
+.table-controls input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.table-controls button {
+    background-color: #3a7bd5;
+    color: #fff;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.table-controls button:hover:not(:disabled) {
+    background-color: #2c5ba0;
+}
+
+.table-controls button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.pagination button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #3a7bd5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.pagination button:disabled {
+    background-color: #ddd;
+}
+
+/* Additional Styling */
+.account-overview .chart-section {
+    height: 300px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.section-container {
+    background-color: #e6f0fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+/* Recent Transactions */
+.recent-transactions {
+    display: flex;
+    gap: 20px;
+}

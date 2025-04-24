@@ -1,0 +1,61 @@
+/* Header container styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c3e50; /* Match the blue color of your screenshot */
+    color: #ecf0f1;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px; /* Increased spacing between icons */
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1.2em;
+    color: #ecf0f1;
+    margin-bottom: 5px; /* Space between icon and caption */
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #e74c3c; /* Red color for badges */
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.75em;
+}
+
+.badge.red {
+    background-color: #e74c3c;
+}
+
+/* Icon caption styling */
+.icon-caption {
+    font-size: 0.75em;
+    color: #ecf0f1;
+    margin-top: 3px;
+}

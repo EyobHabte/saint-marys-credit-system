@@ -1,0 +1,27 @@
+/* src/styles/ViewDeposits.css */
+.view-deposits {
+    padding: 20px;
+  }
+  
+  .view-deposits h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .view-deposits table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .view-deposits th,
+  .view-deposits td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .view-deposits th {
+    background-color: #f5f5f5;
+  }
+  

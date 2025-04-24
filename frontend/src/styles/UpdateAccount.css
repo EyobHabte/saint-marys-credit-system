@@ -1,0 +1,61 @@
+/* src/styles/UpdateAccount.css */
+
+#updateAccountContainer {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#updateAccountContainer h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Ensure labels use static positioning and proper spacing */
+#updateAccountContainer label {
+  position: static !important;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#updateAccountContainer .form-group {
+  margin-bottom: 15px;
+}
+
+#updateAccountContainer input,
+#updateAccountContainer select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  /* Optional: add a small margin-top if needed */
+  margin-top: 5px;
+}
+
+#updateAccountContainer button.update-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#updateAccountContainer button.update-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#updateAccountContainer .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}

@@ -1,0 +1,213 @@
+/* src/styles/AdminReports.css */
+
+.admin-report-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .admin-report-container h2 {
+    text-align: center;
+    color: #004085;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabs can be added here if needed */
+  
+  /* Controls Section */
+  .admin-report-container .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .admin-report-container .refresh-btn {
+    padding: 8px 15px;
+    background-color: #004085;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-report-container .refresh-btn:hover {
+    background-color: #007bff;
+  }
+  
+  .admin-report-container .report-header {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Filter Section */
+  .admin-report-container .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-report-container .filter-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .admin-report-container .filter-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .admin-report-container .filter-group input,
+  .admin-report-container .filter-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .admin-report-container .filter-buttons {
+    display: flex;
+    gap: 10px;
+    align-self: center;
+  }
+  
+  .admin-report-container .filter-btn {
+    padding: 10px 20px;
+    background-color: #004085;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-report-container .filter-btn:hover {
+    background-color: #007bff;
+  }
+  
+  .admin-report-container .filter-btn.clear {
+    background-color: #6c757d;
+  }
+  
+  .admin-report-container .filter-btn.clear:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Summary Cards */
+  .admin-report-container .summary-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-report-container .card {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 15px 20px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-report-container .card h3 {
+    margin-bottom: 10px;
+    color: #004085;
+  }
+  
+  .admin-report-container .card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Charts Section (used for tables in monthly/yearly reports) */
+  .admin-report-container .chart-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .admin-report-container .chart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .admin-report-container .chart-table th,
+  .admin-report-container .chart-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .admin-report-container .chart-table th {
+    background-color: #f1f1f1;
+    color: #004085;
+  }
+  
+  /* Download Section */
+  .admin-report-container .download-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .admin-report-container .download-btn {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-report-container .download-btn.pdf {
+    margin-left: 10px;
+  }
+  
+  .admin-report-container .download-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Error Message */
+  .admin-report-container .error {
+    color: #d9534f;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-report-container .summary-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .admin-report-container .filter-section form {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .admin-report-container .chart-table th,
+    .admin-report-container .chart-table td {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+  

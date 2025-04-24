@@ -1,0 +1,109 @@
+/* Scope styles specifically for CreateAccount */
+.create-account-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-account-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Scope form group styles */
+  .create-account-container .form-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .create-account-container input,
+  .create-account-container select {
+    width: 100%;
+    padding: 14px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .create-account-container input:focus,
+  .create-account-container select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+  
+  /* Scoped label styling */
+  .create-account-container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background-color: #f9f9f9;
+    padding: 0 5px;
+  }
+  
+  .create-account-container input:focus + label,
+  .create-account-container input:not(:placeholder-shown) + label,
+  .create-account-container select:focus + label,
+  .create-account-container select:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 12px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  /* Scoped error styles */
+  .create-account-container .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Scoped button styles */
+  .create-account-container .create-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .create-account-container .create-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .create-account-container .create-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Add box-shadow to form inputs */
+  .create-account-container input,
+  .create-account-container select {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-account-container input:focus,
+  .create-account-container select:focus {
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+  }
+  

@@ -1,0 +1,28 @@
+.member-deposit-list {
+    padding: 20px;
+  }
+  
+  .member-deposit-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .member-deposit-list th,
+  .member-deposit-list td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .deposit-btn {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .deposit-btn:hover {
+    background-color: #218838;
+  }
+  

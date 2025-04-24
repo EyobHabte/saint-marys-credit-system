@@ -1,0 +1,79 @@
+/* src/styles/LoanRequestDetails.css */
+
+#loanRequestDetailsContainer {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  #loanRequestDetailsContainer .loan-details-card p {
+    margin: 10px 0;
+  }
+  
+  /* Use flexbox for proper button layout */
+  #loanRequestDetailsContainer .loan-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  #loanRequestDetailsContainer .approve-btn {
+    padding: 8px 16px;
+    background-color: #28a745; /* Green for approval */ 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #loanRequestDetailsContainer .approve-btn:hover {
+    background-color: #218838;
+  }
+  
+  #loanRequestDetailsContainer .reject-btn {
+    padding: 8px 16px;
+    background-color: #dc3545; /* Red for rejection */ 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #loanRequestDetailsContainer .reject-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Reject section styles */
+  #loanRequestDetailsContainer .reject-section {
+    margin-top: 20px;
+  }
+  
+  #loanRequestDetailsContainer .reject-section textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  #loanRequestDetailsContainer .reject-submit-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #dc3545; /* Red again for the rejection submission */ 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #loanRequestDetailsContainer .reject-submit-btn:hover {
+    background-color: #c82333;
+  }
+  

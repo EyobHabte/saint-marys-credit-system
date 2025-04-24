@@ -1,0 +1,104 @@
+/* src/styles/MemberLoan.module.css */
+
+.memberLoanContainer {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loanHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.loanIcon {
+  font-size: 2.2rem;
+  color: #2196f3;
+  margin-right: 10px;
+  animation: iconBounce 0.8s ease-in-out;
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.loanForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 8px; /* Increased margin for better spacing */
+  color: #333;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}
+
+.submitBtn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+}
+
+.submitBtn:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+.calculationInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

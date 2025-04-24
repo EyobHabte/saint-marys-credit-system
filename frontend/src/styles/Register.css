@@ -1,0 +1,220 @@
+/* Register Container */
+.register-container {
+  max-width: 500px !important;
+  margin: 50px auto !important;
+  padding: 30px !important;
+  border-radius: 12px !important;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0) !important;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
+  animation: fadeInSlide 0.8s ease-in-out !important;
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(20px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+.register-container h2 {
+  text-align: center !important;
+  margin-bottom: 25px !important;
+  font-size: 2rem !important;
+  color: #007bff !important;
+  font-weight: bold !important;
+}
+
+/* Form Group */
+.form-group {
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+
+/* Input Fields */
+.form-control {
+  width: 100% !important;
+  padding: 14px 12px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  background-color: #f9f9f9 !important;
+  transition: border-color 0.3s ease !important, box-shadow 0.3s ease !important;
+}
+
+.form-control:focus {
+  border-color: #007bff !important;
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2) !important;
+  outline: none !important;
+}
+
+/* Floating Label */
+.form-group label {
+  position: absolute !important;
+  left: 15px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  font-size: 16px !important;
+  color: #aaa !important;
+  pointer-events: none !important;
+  background-color: #ffffff !important;  /* Set a white background so text is clear */
+  padding: 0 5px !important;
+  transition: all 0.3s ease !important;
+  z-index: 1 !important;
+}
+
+/* When input is focused or has content, move label up */
+.form-control:focus + label,
+.form-control:not(:placeholder-shown) + label,
+.form-control.has-value + label {
+  top: -10px !important;
+  left: 12px !important;
+  font-size: 12px !important;
+  color: #007bff !important;
+  z-index: 2 !important;
+}
+
+/* Extra top padding when focused or filled to prevent text overlap */
+.form-control:focus,
+.form-control.has-value {
+  padding-top: 20px !important;
+}
+
+/* Ensure a placeholder is set to trigger the :placeholder-shown pseudo-class */
+.form-control::placeholder {
+  color: transparent !important;
+}
+
+/* Dropdown Styling for select elements */
+.select-group label.top-label {
+  position: static !important;
+  font-size: 14px !important;
+  color: #007bff !important;
+  margin-bottom: 5px !important;
+}
+
+.form-group.select-group select {
+  width: 100% !important;
+  padding: 14px 12px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  background-color: #f9f9f9 !important;
+  appearance: none !important;
+  transition: border-color 0.3s ease !important, box-shadow 0.3s ease !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 12px center !important;
+  background-size: 18px !important;
+}
+
+.form-group.select-group select:focus {
+  border-color: #007bff !important;
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2) !important;
+  outline: none !important;
+}
+
+/* File Upload */
+.file-upload input[type="file"] {
+  padding: 8px !important;
+}
+
+/* Error Styling */
+.error {
+  color: #d9534f !important;
+  font-weight: bold !important;
+  margin-top: 5px !important;
+  display: block !important;
+}
+
+.error::before {
+  content: "⚠ " !important;
+  font-size: 1.2rem !important;
+}
+
+/* Button Styling with Ripple Effect */
+.reg_btn {
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  padding: 14px !important;
+  background: linear-gradient(145deg, #007bff, #0056b3) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  transition: transform 0.3s ease !important, background 0.3s ease !important;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4) !important;
+}
+
+.reg_btn:hover {
+  background: linear-gradient(145deg, #0056b3, #004085) !important;
+  transform: translateY(-2px) !important;
+}
+
+.reg_btn:active {
+  transform: scale(0.98) !important;
+  background: linear-gradient(145deg, #004085, #002653) !important;
+}
+
+/* Ripple Effect */
+.reg_btn::after {
+  content: "" !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  opacity: 0 !important;
+  transition: opacity 0.6s ease !important, transform 0.6s ease !important;
+  transform: scale(0) !important;
+  border-radius: 50% !important;
+}
+
+.reg_btn:active::after {
+  opacity: 1 !important;
+  transform: scale(2) !important;
+  transition: 0s !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 20px !important;
+    margin: 30px auto !important;
+  }
+  .register-container h2 {
+    font-size: 1.8rem !important;
+  }
+  .form-control,
+  .select-group select {
+    padding: 12px 10px !important;
+  }
+  .reg_btn {
+    padding: 12px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .register-container {
+    padding: 15px !important;
+    margin: 20px auto !important;
+  }
+  .form-group {
+    margin-bottom: 20px !important;
+  }
+  .register-container h2 {
+    font-size: 1.5rem !important;
+  }
+  .reg_btn {
+    padding: 10px !important;
+    font-size: 14px !important;
+  }
+}
