@@ -27,7 +27,6 @@ Saint Mary’s University Employee Credit & Saving System is a full-stack applic
 - **Loan Management**: request, approve/reject, repayment schedules
 - **Reporting Dashboard**: monthly summaries, custom reports
 - **Role-based Access Control**: Admin, Finance Officer, Member
-- **Automated Notifications** via email/SMS
 
 ## Tech Stack
 - **Frontend**: React, React Router, Axios
