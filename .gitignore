@@ -1,0 +1,14 @@
+# Django virtualenv
+backend/myenv/
+backend/__pycache__/
+backend/*.sqlite3
+backend/media/
+backend/db_backup.sql
+
+# React dependencies & build
+frontend/node_modules/
+frontend/build/
+
+# Editor / OS files
+.vscode/
+.DS_Store
