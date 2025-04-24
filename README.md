@@ -14,8 +14,7 @@
 6. [Installation](#installation)
 7. [Usage](#usage)
 8. [Running Tests](#running-tests)
-9. [Contributing](#contributing)
-10. [License](#license)
+9. [License](#license)
 
 ---
 
@@ -104,12 +103,6 @@ cd frontend
 npm test
 ```
 
-## Contributing
-1. Fork the repo  
-2. Create a feature branch: `git checkout -b feature-name`  
-3. Commit your changes: `git commit -m 'Add new feature'`  
-4. Push to branch: `git push origin feature-name`  
-5. Open a Pull Request
 
 ## License
 This project is licensed under the [MIT License](LICENSE).  
