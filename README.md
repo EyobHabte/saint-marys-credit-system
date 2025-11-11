@@ -1,8 +1,18 @@
 # Saint Mary’s University Employee Credit & Saving System
 
-**Full-stack Web Application** — React · Django · PostgreSQL
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-009688?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
 
-> A web-based platform for Saint Mary’s University employees to manage personal savings and credit transactions.
+Full-stack Web Application — **React · Django · PostgreSQL**
+
+A web-based platform for Saint Mary’s University employees to manage personal savings and credit transactions.
 
 
 ## Table of Contents
