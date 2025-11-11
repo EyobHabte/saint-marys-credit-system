@@ -12,7 +12,7 @@
 
 Full-stack Web Application — **React · Django · PostgreSQL**
 
-A web-based platform for Saint Mary’s University employees to manage personal savings and credit transactions.
+>A web-based platform for Saint Mary’s University employees to manage personal savings and credit transactions.
 
 
 ## Table of Contents
